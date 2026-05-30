@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Business Funding | Get $400–$2M in 48 Hours</title>
+  <meta name="description" content="Get $400–$2M in 48 hours. No collateral required. Fast business capital for owners who can't wait.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #ffffff;
+    }
+
+    /* SCROLL TO TOP BUTTON */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      width: 50px;
+      height: 50px;
+      background: #FF0066;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 6px 20px rgba(255, 0, 102, 0.4);
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+
+    .scroll-to-top:hover {
+      background: #E6005C;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(255, 0, 102, 0.5);
+    }
+
+    .scroll-to-top.show {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+      }
+    }
+
+    /* HEADER & NAVIGATION */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #f3f4f6;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    header .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FF0066;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    nav a {
+      color: #6b7280;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #FF0066;
+    }
+
+    .btn-nav {
+      background: #FF0066;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-nav:hover {
+      background: #E6005C;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(255, 0, 102, 0.25);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: url('hero_background.png') center/cover no-repeat fixed;
+      color: white;
+      padding: 140px 20px 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 23, 42, 0.5);
+      z-index: 1;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero .subheading {
+      font-size: 20px;
+      margin-bottom: 40px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #FF0066;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #E6005C;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 0, 102, 0.35);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    .btn-secondary:hover {
+      background: #f3f4f6;
+      transform: translateY(-2px);
+    }
+
+    /* TRUST BADGES */
+    .trust-badges {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 50px;
+      padding: 0 20px;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .badge:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .badge .number {
+      font-size: 32px;
+      font-weight: 700;
+      display: block;
+      color: #FF0066;
+      margin-bottom: 5px;
+    }
+
+    .badge .label {
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    /* CONTAINER & SECTIONS */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 80px 0;
+      position: relative;
+    }
+
+    section.agent-section {
+      background-color: #FFE6F0;
+    }
+
+    section.agent-section .container {
+      max-width: 1100px;
+    }
+
+    .section-full-bg {
+      margin: 0 -9999px;
+      padding: 80px 9999px;
+      background-color: #f9fafb;
+    }
+
+    .section-full-bg.dark {
+      background-color: #f3f4f6;
+    }
+
+    section h2 {
+      font-size: 44px;
+      margin-bottom: 15px;
+      color: #0f172a;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    section h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    .section-subtitle {
+      font-size: 18px;
+      color: #6b7280;
+      margin-bottom: 50px;
+      line-height: 1.6;
+      max-width: 700px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* AGENT UVP SECTION */
+    .agent-uvp {
+      text-align: center;
+    }
+
+    .agent-uvp h2 {
+      font-size: 44px;
+      margin-bottom: 15px;
+      color: #0f172a;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .agent-uvp-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 30px;
+      justify-items: center;
+    }
+
+    .agent-stat {
+      text-align: center;
+    }
+
+    .agent-stat-number {
+      font-size: 36px;
+      font-weight: 700;
+      color: #FF0066;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .agent-stat-label {
+      font-size: 15px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .agent-uvp-description {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+      text-align: center;
+      border-left: 4px solid #FF0066;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .agent-uvp-description p {
+      color: #374151;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .agent-uvp-description p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* WHY US SECTION */
+    #why .content {
+      max-width: 800px;
+      margin: 0 auto 50px;
+      line-height: 1.8;
+      color: #374151;
+      font-size: 16px;
+    }
+
+    #why .content p {
+      margin-bottom: 20px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+      justify-items: center;
+    }
+
+    .benefit-card {
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      border-top: 3px solid #FF0066;
+      max-width: 280px;
+      text-align: center;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .benefit-card-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .benefit-card h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .benefit-card p {
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .section-cta {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .section-cta .btn {
+      padding: 14px 40px;
+      font-size: 16px;
+    }
+
+    /* OUR CLIENTS SECTION */
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .industry-card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .industry-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      border-color: #FF0066;
+    }
+
+    .industry-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .industry-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #0f172a;
+      line-height: 1.4;
+    }
+
+    /* HOW IT WORKS */
+    .steps-container {
+      border: 3px solid #0f172a;
+      border-radius: 12px;
+      padding: 50px 30px;
+      background: white;
+      margin-top: 50px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 0;
+    }
+
+    .step {
+      text-align: center;
+      position: relative;
+    }
+
+    .step:not(:last-child)::after {
+      content: '→';
+      position: absolute;
+      right: -25px;
+      top: 60px;
+      font-size: 28px;
+      color: #FF0066;
+      font-weight: 700;
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #FF0066 0%, #E6005C 100%);
+      color: white;
+      font-size: 28px;
+      font-weight: 700;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(255, 0, 102, 0.25);
+    }
+
+    .step h3 {
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .step p {
+      color: #6b7280;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+      justify-items: center;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-left: 4px solid #FF0066;
+      max-width: 320px;
+    }
+
+    .testimonial-text {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: #0f172a;
+      font-size: 14px;
+    }
+
+    .testimonial-title {
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 3px;
+    }
+
+    /* CASE STUDIES */
+    .cases {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .case-study {
+      background: linear-gradient(135deg, #FFF5FB 0%, #FFE6F0 100%);
+      padding: 35px;
+      border-radius: 12px;
+      border: 1px solid #FFD9E8;
+    }
+
+    .case-amount {
+      font-size: 36px;
+      font-weight: 700;
+      color: #FF0066;
+      margin-bottom: 10px;
+    }
+
+    .case-industry {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .case-result {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.7;
+    }
+
+    .case-result strong {
+      color: #0f172a;
+      display: block;
+      margin-top: 8px;
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: #0f172a;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .cta-content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-section h2 {
+      color: white;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .cta-subtitle {
+      font-size: 18px;
+      opacity: 0.95;
+      margin-bottom: 35px;
+      line-height: 1.6;
+    }
+
+    .cta-description {
+      font-size: 16px;
+      opacity: 0.9;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+
+    /* FAQ */
+    .faq-items {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 25px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border-left: 3px solid #FF0066;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .faq-question {
+      font-weight: 600;
+      color: #0f172a;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+    }
+
+    .faq-toggle {
+      font-size: 18px;
+      transition: transform 0.3s ease;
+      color: #FF0066;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 15px;
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #FF0066;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+      opacity: 0.9;
+    }
+
+    .footer-email {
+      margin: 15px 0;
+      font-weight: 500;
+    }
+
+    .footer-copyright {
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .benefits {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .agent-uvp-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+
+      .step:not(:last-child)::after {
+        right: auto;
+        bottom: -35px;
+        content: '↓';
+      }
+
+      .step:nth-child(2)::after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero .subheading {
+        font-size: 18px;
+      }
+
+      section h2 {
+        font-size: 32px;
+      }
+
+      nav {
+        gap: 20px;
+        display: none;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .testimonials {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .agent-uvp-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .step:not(:last-child)::after {
+        content: '↓';
+        bottom: -25px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .steps-container {
+        padding: 30px 20px;
+        border-width: 2px;
+      }
+
+      .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 6px;
+      }
+
+      .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: #0f172a;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+      }
+
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
+
+      nav.mobile-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        gap: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SCROLL TO TOP BUTTON -->
+<button class="scroll-to-top" id="scrollToTop">↑</button>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <a href="#" class="logo">Fast Capital Funding</a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="mobileNav">
+      <a href="#why">Why Us</a>
+      <a href="#clients">Our Clients</a>
+      <a href="#how">How It Works</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://davidallencapital.com/business-capital-apply/AA2338" target="_blank" class="btn-nav">APPLY NOW!</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Your One-Stop Solution for Funding, Growth, and Success</h1>
+    <p class="subheading">Get $400–$2M approved in 48 hours. No collateral required. Just fast funding for owners who can't wait.</p>
+    
+    <div class="hero-cta">
+      <a href="https://davidallencapital.com/business-capital-apply/AA2338" target="_blank" class="btn btn-primary">APPLY NOW!</a>
+      <button class="btn btn-secondary" onclick="document.getElementById('why').scrollIntoView({behavior: 'smooth'})">See How It Works</button>
+    </div>
+
+    <div class="trust-badges">
+      <div class="badge">
+        <span class="number">48h</span>
+        <span class="label">Approval Time</span>
+      </div>
+      <div class="badge">
+        <span class="number">$2M</span>
+        <span class="label">Max Funding</span>
+      </div>
+      <div class="badge">
+        <span class="number">5min</span>
+        <span class="label">Application</span>
+      </div>
+      <div class="badge">
+        <span class="number">100%</span>
+        <span class="label">No Collateral</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- WHY FAST CAPITAL -->
+<section id="why" class="section-full-bg">
+  <div class="container">
+    <h2>Why Fast Capital</h2>
+    <p class="section-subtitle">Because getting business funding shouldn't be complicated.</p>
+    
+    <div class="content">
+      <p>With one simple 5-minute application, we connect you to multiple top lenders competing to give you the best possible offer, increasing your approval odds and helping you secure better terms.</p>
+      
+      <p>Your dedicated funding specialist guides you every step of the way, with funding available as fast as the same business day.</p>
+      
+      <p>Whether you need capital to grow, hire, purchase inventory, upgrade equipment, or manage operations, we help you access the funding your business needs to move forward.</p>
+    </div>
+
+    <div class="benefits">
+      <div class="benefit-card">
+        <div class="benefit-card-icon">⚡</div>
+        <h3>Quick & Efficient</h3>
+        <p>Fast approval process with funding available same business day</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-card-icon">💡</div>
+        <h3>Transparency</h3>
+        <p>Full transparency and flexibility throughout the process</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-card-icon">👥</div>
+        <h3>Direct Support</h3>
+        <p>Direct communication with dedicated business account representatives</p>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <a href="https://davidallencapital.com/business-capital-apply/AA2338" target="_blank" class="btn btn-primary">APPLY NOW!</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON SECTION -->
+<section id="comparison" style="background: #0f172a; padding: 80px 0; margin: 0;">
+  <div class="container">
+    <h2 style="color: white;">Fast Capital vs. Traditional Banks</h2>
+    <p class="section-subtitle" style="color: rgba(255,255,255,0.8); margin-bottom: 50px;">Why we're different</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; max-width: 900px; margin-left: auto; margin-right: auto; align-items: stretch;">
+      <div style="text-align: center; display: flex; flex-direction: column;">
+        <h3 style="color: white; font-weight: 600; margin-bottom: 30px; font-size: 20px;">Traditional Banks</h3>
+        <div style="background: white; padding: 30px; border-radius: 12px; text-align: left; flex: 1; display: flex; flex-direction: column; justify-content: flex-start;">
+          <p style="margin-bottom: 15px; color: #374151; font-size: 15px;"><strong>Timeline:</strong> <span style="color: #6b7280;">6-12 weeks</span></p>
+          <p style="margin-bottom: 15px; color: #374151; font-size: 15px;"><strong>Documentation:</strong> <span style="color: #6b7280;">Extensive (20+ pages)</span></p>
+          <p style="margin-bottom: 15px; color: #374151; font-size: 15px;"><strong>Collateral:</strong> <span style="color: #6b7280;">Required</span></p>
+          <p style="margin-bottom: 15px; color: #374151; font-size: 15px;"><strong>Credit Focus:</strong> <span style="color: #6b7280;">Yes</span></p>
+          <p style="margin-bottom: 0; color: #374151; font-size: 15px;"><strong>Approval Rate:</strong> <span style="color: #6b7280;">30-40%</span></p>
+        </div>
+      </div>
+      
+      <div style="text-align: center; display: flex; flex-direction: column;">
+        <h3 style="color: #FF0066; font-weight: 600; margin-bottom: 30px; font-size: 20px;">Fast Capital</h3>
+        <div style="background: white; padding: 30px; border-radius: 12px; text-align: left; border: 2px solid #FF0066; flex: 1; display: flex; flex-direction: column; justify-content: flex-start;">
+          <p style="margin-bottom: 15px; color: #374151; font-size: 15px;"><strong>Timeline:</strong> <span style="color: #FF0066; font-weight: 600;">48 hours</span></p>
+          <p style="margin-bottom: 15px; color: #374151; font-size: 15px;"><strong>Documentation:</strong> <span style="color: #FF0066; font-weight: 600;">Minimal (3 months bank statements)</span></p>
+          <p style="margin-bottom: 15px; color: #374151; font-size: 15px;"><strong>Collateral:</strong> <span style="color: #FF0066; font-weight: 600;">Not required</span></p>
+          <p style="margin-bottom: 15px; color: #374151; font-size: 15px;"><strong>Cash Flow Focus:</strong> <span style="color: #FF0066; font-weight: 600;">Yes</span></p>
+          <p style="margin-bottom: 0; color: #374151; font-size: 15px;"><strong>Approval Rate:</strong> <span style="color: #FF0066; font-weight: 600;">90%</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR CLIENTS -->
+<section id="clients">
+  <div class="container">
+    <h2>Industries We Serve</h2>
+    <p class="section-subtitle">We work with business owners across all industries. Revenue and cashflow matters more than your industry type.</p>
+    
+    <div class="industries-grid">
+      <div class="industry-card">
+        <span class="industry-icon">🛍️</span>
+        <div class="industry-name">Retail & E-Commerce</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🏗️</span>
+        <div class="industry-name">Construction & Trades</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🍽️</span>
+        <div class="industry-name">Restaurants & Food</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🏥</span>
+        <div class="industry-name">Healthcare & Medical</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🚚</span>
+        <div class="industry-name">Transportation & Logistics</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">⚙️</span>
+        <div class="industry-name">Manufacturing</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">💻</span>
+        <div class="industry-name">Technology & IT</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🎓</span>
+        <div class="industry-name">Education & Training</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🏠</span>
+        <div class="industry-name">Real Estate & Property</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">📢</span>
+        <div class="industry-name">Marketing & Advertising</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">💄</span>
+        <div class="industry-name">Beauty & Wellness</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">💰</span>
+        <div class="industry-name">Financial Services</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🔧</span>
+        <div class="industry-name">Home Services</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">💼</span>
+        <div class="industry-name">Professional Services</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🚗</span>
+        <div class="industry-name">Automotive Services</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">📦</span>
+        <div class="industry-name">Wholesale & Distribution</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">👔</span>
+        <div class="industry-name">Staffing & Recruiting</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">❤️</span>
+        <div class="industry-name">Nonprofits</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🎬</span>
+        <div class="industry-name">Creative & Media</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">💪</span>
+        <div class="industry-name">Fitness & Training</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🧹</span>
+        <div class="industry-name">Cleaning Services</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🌾</span>
+        <div class="industry-name">Agriculture & Farming</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🏨</span>
+        <div class="industry-name">Hospitality & Travel</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">👶</span>
+        <div class="industry-name">Daycare & Childcare</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">⚖️</span>
+        <div class="industry-name">Legal Services</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">☂️</span>
+        <div class="industry-name">Insurance Services</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🐾</span>
+        <div class="industry-name">Pet Services & Care</div>
+      </div>
+      <div class="industry-card">
+        <span class="industry-icon">🖨️</span>
+        <div class="industry-name">Printing & Signage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENT UVP SECTION -->
+<section class="agent-section">
+  <div class="container">
+    <div class="agent-uvp">
+      <h2>Why Work With an Independent Agent?</h2>
+      
+      <div class="agent-uvp-content">
+        <div class="agent-stat">
+          <span class="agent-stat-number">200,000+</span>
+          <span class="agent-stat-label">Businesses Funded</span>
+        </div>
+        <div class="agent-stat">
+          <span class="agent-stat-number">90%</span>
+          <span class="agent-stat-label">Success Approval Rate</span>
+        </div>
+        <div class="agent-stat">
+          <span class="agent-stat-number">5,000+</span>
+          <span class="agent-stat-label">Clients We've Personally Guided</span>
+        </div>
+      </div>
+
+      <div class="agent-uvp-description">
+        <p><strong>30 years in finance and business consulting.</strong></p>
+        <p>We've worked with over 5,000 businesses across diverse industries. We understand people, process, and profit quickly. We prepare you for approval, increasing your odds and helping you secure better terms. This isn't a transaction. It's a partnership to get your business the capital it deserves.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section-full-bg dark">
+  <div class="container">
+    <h2>How It Works</h2>
+    <p class="section-subtitle">From application to funding in 3 simple steps</p>
+    
+    <div class="steps-container">
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Apply Online</h3>
+          <p>5-minute application. Just basic info about your business and funding needs.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Get Approved</h3>
+          <p>Within 24–48 hours, you'll get an approval decision with your funding amount.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Receive Funds</h3>
+          <p>Money lands in your account within 1 business day. Use it immediately.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <a href="https://davidallencapital.com/business-capital-apply/AA2338" target="_blank" class="btn btn-primary">APPLY NOW!</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section-full-bg">
+  <div class="container">
+    <h2>What Business Owners Say</h2>
+    <p class="section-subtitle">Real results from real entrepreneurs</p>
+    
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="testimonial-text">"I needed cash for peak season and traditional banks wanted 6 weeks. You approved me in 2 days. Absolutely game-changing."</div>
+        <div class="testimonial-author">Marcus Thompson</div>
+        <div class="testimonial-title">Ecommerce Owner</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-text">"My credit isn't perfect but my business is solid. Finally someone looked at my revenue, not just my score. Got funded immediately."</div>
+        <div class="testimonial-author">Jennifer Rodriguez</div>
+        <div class="testimonial-title">Restaurant Owner</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-text">"Applied Tuesday, funded Thursday. Avoided missing payroll and kept my team intact. Exactly what a growing business needs."</div>
+        <div class="testimonial-author">Patricia Williams</div>
+        <div class="testimonial-title">Healthcare Services</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section-full-bg dark">
+  <div class="container">
+    <h2>Real Results</h2>
+    <p class="section-subtitle">How businesses are using fast capital to grow</p>
+    
+    <div class="cases">
+      <div class="case-study">
+        <div class="case-amount">$28,000</div>
+        <div class="case-industry">Healthcare - Home Health Care Facility (PA)</div>
+        <div class="case-result"><strong>Challenge:</strong> Urgent hiring for peak season<br><strong>Result:</strong> Approved same day. Hired staff, increased revenue.</div>
+      </div>
+      <div class="case-study">
+        <div class="case-amount">$165,000</div>
+        <div class="case-industry">Construction - Construction Company (VA)</div>
+        <div class="case-result"><strong>Challenge:</strong> Quick funding needed for crew expansion<br><strong>Result:</strong> Approved within 30 minutes! Expanded team, grew revenue.</div>
+      </div>
+      <div class="case-study">
+        <div class="case-amount">$250,000</div>
+        <div class="case-industry">Retail - Health Food Store (TX)</div>
+        <div class="case-result"><strong>Challenge:</strong> Needed capital for core rate funding<br><strong>Result:</strong> Approved and funded. Expanded inventory, increased sales 50%.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>Ready to Expand Your Business?</h2>
+    <p class="cta-subtitle">There is no obligation or cost to find out what you qualify for.</p>
+    <p class="cta-description">With our quick and efficient approval process, you're only hours away from obtaining the business capital to grow your company.</p>
+    <a href="https://davidallencapital.com/business-capital-apply/AA2338" target="_blank" class="btn btn-primary" style="padding: 16px 40px; font-size: 16px;">APPLY NOW!</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section-full-bg">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <p class="section-subtitle">Everything you need to know</p>
+    
+    <div class="faq-items">
+      <div class="faq-item active">
+        <div class="faq-question">
+          <span>How fast can I really get approved?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">Most applications are approved within 24–48 hours. Once approved, funds typically land within 1 business day of confirmation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What do I need to provide?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">Three months of bank statements, 3+ deposits, and consistent $3K–$15K+ monthly cash flow. That's all we need to get you approved fast.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Do you check my credit score?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">We review your business cash flow, revenue trends, and ability to repay—not your personal credit history. This makes us ideal for owners with imperfect credit.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Do you require collateral?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">No collateral required. Funding is based solely on your business's cash flow and revenue. You're not risking your home or personal assets.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How much can I borrow?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">Up to $2M depending on your business revenue and cash flow. Approval amount is based entirely on your ability to repay.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What's the cost? Any hidden fees?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">Transparent pricing. Funding costs are factored into your repayment term—no surprise fees, application charges, or prepayment penalties. We'll show you the exact total before you accept.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What happens after I apply?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">1) Submit application online. 2) Reviewed by multiple lenders within minutes. 3) You'll get approval decision. 4) If approved, confirm with bank statements. 5) Money deposits within 1 business day. Total: usually under 48 hours.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Is this a loan?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">This is alternative business financing. It works like a loan (you repay over time) but with faster approval, no collateral, and focus on cash flow instead of credit scores. Terms are flexible based on your business type.</div>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <a href="https://davidallencapital.com/business-capital-apply/AA2338" target="_blank" class="btn btn-primary">APPLY NOW!</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p><strong>Fast Capital Funding</strong></p>
+    <p>Independent agent of David Allen Capital</p>
+    <p>Connecting business owners with fast, flexible capital solutions.</p>
+    <p class="footer-email"><strong>Contact Email:</strong> <a href="mailto:fundablebusiness@gmail.com">fundablebusiness@gmail.com</a></p>
+    <p class="footer-copyright">© 2026 Fast Capital Funding. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // FAQ Toggle
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+
+  // Scroll to Top Button
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.classList.add('show');
+    } else {
+      scrollToTopBtn.classList.remove('show');
+    }
+  });
+
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // Mobile Hamburger Menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileNav.classList.toggle('mobile-open');
+  });
+
+  // Close menu when link is clicked
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('mobile-open');
+    });
+  });
+</script>
+
+</body>
+</html>
